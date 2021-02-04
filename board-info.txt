@@ -1,0 +1,1 @@
+require board=hihope_rzg2m
