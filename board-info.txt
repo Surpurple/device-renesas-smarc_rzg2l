@@ -1,1 +1,1 @@
-require board=hihope_rzg2m
+require board=smarc_rzg2l
