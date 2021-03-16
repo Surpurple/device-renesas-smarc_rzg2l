@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-TARGET_BOARD_PLATFORM ?= r9a07g004l
+TARGET_BOARD_PLATFORM ?= r9a07g044l
 RELEASE_NUMBER ?= test
 
 $(call inherit-product, device/renesas/smarc_rzg2l/device.mk)
