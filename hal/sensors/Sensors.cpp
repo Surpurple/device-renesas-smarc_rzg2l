@@ -24,7 +24,7 @@ namespace android {
 namespace hardware {
 namespace sensors {
 namespace V1_0 {
-namespace hihope_rzg2m {
+namespace smarc_rzg2l {
 
 Return<void> Sensors::getSensorsList (getSensorsList_cb cb)
 {
@@ -87,7 +87,7 @@ Return<void> Sensors::configDirectReport (int32_t, int32_t, RateLevel, configDir
     return Void ();
 }
 
-}  // namespace hihope_rzg2m
+}  // namespace smarc_rzg2l
 }  // namespace V1_0
 }  // namespace sensors
 }  // namespace hardware

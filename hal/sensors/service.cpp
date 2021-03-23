@@ -29,7 +29,7 @@ using namespace android::hardware::sensors::V1_0;
 int main (int, char **)
 {
     android::ProcessState::initWithDriver ("/dev/vndbinder");
-    android::sp<ISensors> sensors_hal = new hihope_rzg2m::Sensors ();
+    android::sp<ISensors> sensors_hal = new smarc_rzg2l::Sensors ();
 
     configureRpcThreadpool (2, true);
 
