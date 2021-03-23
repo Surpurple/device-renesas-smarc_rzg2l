@@ -4,9 +4,10 @@
     name - port name
     id - port identifier in /sys/devices/platform/soc/
     mode - port mode (host, device, dual)
-    noswitch - explicitly denies role switch attempts -->
+    noswitch - explicitly denies role switch attempts
+    usb2_0: usb2_phy0, usb2_1: ehci0, usb2_2: ehci1 -->
 <usbports>
-    <port name="usb2_0" id="ee080200.usb-phy" mode="dual" noswitch="true" />
-    <port name="usb2_1" id="ee0a0100.usb" mode="host"/>
-    <port name="usb3_0" id="ee000000.usb" mode="host"/>
+    <port name="usb2_0" id="11c50200.usb-phy" mode="dual" noswitch="true" />
+    <port name="usb2_1" id="11c50100.usb" mode="host"/>
+    <port name="usb2_2" id="11c70100.usb" mode="host"/>
 </usbports>
