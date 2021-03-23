@@ -20,6 +20,6 @@ LOCAL_PATH := $(call my-dir)
 
 include $(call all-makefiles-under,$(LOCAL_PATH))
 
-include device/renesas/common/build/full_ota.mk
+include device/renesas/common/build/full_ota_rzg2l.mk
 
 endif
