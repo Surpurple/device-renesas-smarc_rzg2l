@@ -35,6 +35,10 @@ on init
     write /dev/stune/rt/schedtune.boost 30
     write /dev/stune/rt/schedtune.prefer_idle 1
 
+    # disable transparent huge pages
+    write /sys/kernel/mm/transparent_hugepage/enabled "never"
+
+
 on property:ro.boot.wd_start=1
     start watchdogd
 
