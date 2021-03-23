@@ -32,10 +32,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     device/renesas/smarc_rzg2l/touchscreen_skeleton.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/touchscreen_skeleton.idc
 
-# LVDS touchcreen configuration for eGALAXY
-PRODUCT_COPY_FILES += \
-    device/renesas/smarc_rzg2l/eGalax_Inc__USB_TouchController.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/eGalax_Inc__USB_TouchController.idc
-
 # HDMI touchcreen configuration for Melfas LGD AIT Touch Controller
 PRODUCT_COPY_FILES += \
     device/renesas/smarc_rzg2l/Melfas_LGD_AIT_Touch_Controller.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/Melfas_LGD_AIT_Touch_Controller.idc
