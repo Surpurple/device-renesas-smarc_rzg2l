@@ -117,4 +117,14 @@
              <instance>default</instance>
          </interface>
      </hal>
+     <hal format="hidl">
+         <name>arm.graphics.privatebuffer</name>
+         <transport arch="32+64">passthrough</transport>
+         <version>1.0</version>
+         <interface>
+             <name>IAccessor</name>
+             <instance>default</instance>
+         </interface>
+         <fqname>@1.0::IAccessor/default</fqname>
+     </hal>
 </manifest>
