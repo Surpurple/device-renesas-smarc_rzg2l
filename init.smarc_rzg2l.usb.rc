@@ -27,14 +27,6 @@ on early-boot
     insmod /vendor/lib/modules/xhci-plat-hcd.ko
     insmod /vendor/lib/modules/usb-storage.ko
     insmod /vendor/lib/modules/uvcvideo.ko
-    insmod /vendor/lib/modules/rtlwifi.ko
-    insmod /vendor/lib/modules/rtl_usb.ko
-    insmod /vendor/lib/modules/rtl8192c-common.ko
-    insmod /vendor/lib/modules/rtl8192cu.ko
-    insmod /vendor/lib/modules/usbserial.ko
-    insmod /vendor/lib/modules/pl2303.ko
-    insmod /vendor/lib/modules/ftdi_sio.ko
-    insmod /vendor/lib/modules/cdc-acm.ko
 
     mount configfs none /config
 

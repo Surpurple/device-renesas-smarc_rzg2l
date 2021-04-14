@@ -89,7 +89,6 @@ on early-boot
 on boot
     write /sys/power/wake_lock ws10_suspend_wa
 
-    insmod /vendor/lib/modules/qos.ko
     insmod /vendor/lib/modules/vspm_if.ko
     insmod /vendor/lib/modules/mmngr.ko
     insmod /vendor/lib/modules/mmngrbuf.ko
