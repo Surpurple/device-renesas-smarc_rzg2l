@@ -19,17 +19,17 @@ PRODUCT_OUT               := $(OUT_DIR)/target/product/$(TARGET_PRODUCT)
 KERNEL_MODULES_OUT := $(PRODUCT_OUT)/obj/KERNEL_MODULES
 
 
-BOARD_VENDOR_KERNEL_MODULES += \
-       $(KERNEL_MODULES_OUT)/usbserial.ko \
-       $(KERNEL_MODULES_OUT)/pl2303.ko \
-       $(KERNEL_MODULES_OUT)/ftdi_sio.ko \
-       $(KERNEL_MODULES_OUT)/cdc-acm.ko \
-       $(KERNEL_MODULES_OUT)/uvcvideo.ko
-
-BOARD_VENDOR_KERNEL_MODULES += \
-       $(KERNEL_MODULES_OUT)/rtlwifi.ko \
-       $(KERNEL_MODULES_OUT)/rtl_usb.ko \
-       $(KERNEL_MODULES_OUT)/rtl8192c-common.ko \
-       $(KERNEL_MODULES_OUT)/rtl8192cu.ko
+#BOARD_VENDOR_KERNEL_MODULES += \
+#       $(KERNEL_MODULES_OUT)/usbserial.ko \
+#       $(KERNEL_MODULES_OUT)/pl2303.ko \
+#       $(KERNEL_MODULES_OUT)/ftdi_sio.ko \
+#       $(KERNEL_MODULES_OUT)/cdc-acm.ko \
+#       $(KERNEL_MODULES_OUT)/uvcvideo.ko
+#
+#BOARD_VENDOR_KERNEL_MODULES += \
+#       $(KERNEL_MODULES_OUT)/rtlwifi.ko \
+#       $(KERNEL_MODULES_OUT)/rtl_usb.ko \
+#       $(KERNEL_MODULES_OUT)/rtl8192c-common.ko \
+#       $(KERNEL_MODULES_OUT)/rtl8192cu.ko
 
 include device/renesas/common/ModulesCommon.mk
