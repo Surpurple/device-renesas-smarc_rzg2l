@@ -35,3 +35,12 @@ PRODUCT_COPY_FILES += \
 # HDMI touchcreen configuration for Melfas LGD AIT Touch Controller
 PRODUCT_COPY_FILES += \
     device/renesas/smarc_rzg2l/Melfas_LGD_AIT_Touch_Controller.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/Melfas_LGD_AIT_Touch_Controller.idc
+
+# Enable generic Memtrack
+PRODUCT_PACKAGES += memtrack.$(TARGET_BOARD_PLATFORM) \
+    android.hardware.memtrack@1.0-service \
+    android.hardware.memtrack@1.0-impl
+
+# Support load memtrack.r9a07g044l.so
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.hardware.memtrack = $(TARGET_BOARD_PLATFORM)
