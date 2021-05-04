@@ -28,6 +28,9 @@ on early-boot
     insmod /vendor/lib/modules/usb-storage.ko
     insmod /vendor/lib/modules/uvcvideo.ko
 
+    # Change usb mode from host to peripheral
+    write /sys/devices/platform/soc/11c50200.usb-phy/role "peripheral"
+
     mount configfs none /config
 
     mkdir /config/usb_gadget/g1 0770
