@@ -29,3 +29,6 @@
 
 # Same process HALs
 /vendor/lib(64)?/hw/memtrack.r9a07g044l.so                                     u:object_r:same_process_hal_file:s0
+
+# Audio HALs
+vendor/lib(64)?/hw/audio.primary.smarc_rzg2l.so                                u:object_r:same_process_hal_file:s0
