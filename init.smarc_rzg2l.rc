@@ -79,7 +79,6 @@ on early-boot
     # Update dm-verity state and set partition.*.verified properties
     verity_update_state
 
-    insmod /vendor/lib/modules/vspm.ko
     # Mali GPU init
     insmod /vendor/lib/modules/mali_kbase.ko
     insmod /vendor/lib/modules/memory_group_manager.ko
@@ -89,10 +88,6 @@ on early-boot
 on boot
     write /sys/power/wake_lock ws10_suspend_wa
 
-    insmod /vendor/lib/modules/vspm_if.ko
-    insmod /vendor/lib/modules/mmngr.ko
-    insmod /vendor/lib/modules/mmngrbuf.ko
-    insmod /vendor/lib/modules/uvcs_drv.ko
     exec u:r:vendor_modprobe:s0 root root -- /vendor/bin/toybox_vendor insmod /vendor/lib/modules/8812au.ko ifname=wlan0
 
 on property:sys.boot_completed=1
