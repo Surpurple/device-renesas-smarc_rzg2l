@@ -19,12 +19,12 @@ PRODUCT_OUT               := $(OUT_DIR)/target/product/$(TARGET_PRODUCT)
 KERNEL_MODULES_OUT := $(PRODUCT_OUT)/obj/KERNEL_MODULES
 
 
-#BOARD_VENDOR_KERNEL_MODULES += \
+BOARD_VENDOR_KERNEL_MODULES += \
+	$(KERNEL_MODULES_OUT)/uvcvideo.ko
 #       $(KERNEL_MODULES_OUT)/usbserial.ko \
 #       $(KERNEL_MODULES_OUT)/pl2303.ko \
 #       $(KERNEL_MODULES_OUT)/ftdi_sio.ko \
 #       $(KERNEL_MODULES_OUT)/cdc-acm.ko \
-#       $(KERNEL_MODULES_OUT)/uvcvideo.ko
 #
 #BOARD_VENDOR_KERNEL_MODULES += \
 #       $(KERNEL_MODULES_OUT)/rtlwifi.ko \
