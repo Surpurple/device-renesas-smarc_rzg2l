@@ -20,4 +20,4 @@ include device/renesas/common/BoardConfigCommon.mk
 
 # Kernel build rules
 BOARD_KERNEL_CMDLINE += androidboot.hardware=smarc_rzg2l
-TARGET_KERNEL_CONFIG := android_10_hihope_rzg2_defconfig
+TARGET_KERNEL_CONFIG := android_10_rzg2_defconfig
