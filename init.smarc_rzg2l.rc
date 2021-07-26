@@ -88,7 +88,9 @@ on early-boot
 on boot
     write /sys/power/wake_lock ws10_suspend_wa
 
-    exec u:r:vendor_modprobe:s0 root root -- /vendor/bin/toybox_vendor insmod /vendor/lib/modules/8812au.ko ifname=wlan0
+	insmod /vendor/lib/modules/rfkill.ko
+	insmod /vendor/lib/modules/cfg80211.ko
+	insmod /vendor/lib/modules/8812au.ko
 
 on property:sys.boot_completed=1
     # reset stune
