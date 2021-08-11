@@ -13,3 +13,9 @@ on early-fs
     setprop sys.usb.controller "11c60000.usb"
     setprop sys.usb.ffs.ready 0
     setprop sys.usb.configfs 1
+    start watchdogd
+
+# Set watchdog timer to 30 seconds and pet it every 10 seconds to get a 20 second margin
+service watchdogd /system/bin/watchdogd 10 20
+    oneshot
+    seclabel u:r:watchdogd:s0

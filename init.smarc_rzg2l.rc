@@ -19,6 +19,7 @@ on early-init
 
 on init
     setrlimit memlock 8519680 8519680
+    start watchdogd
 
     # Support legacy paths
     symlink /sdcard /mnt/sdcard
@@ -37,10 +38,6 @@ on init
 
     # disable transparent huge pages
     write /sys/kernel/mm/transparent_hugepage/enabled "never"
-
-
-on property:ro.boot.wd_start=1
-    start watchdogd
 
 
 on fs
@@ -127,6 +124,6 @@ on early-init
     start vendor.camera-provider-2-4-ext
 
 # Set watchdog timer to 30 seconds and pet it every 10 seconds to get a 20 second margin
-service watchdogd /sbin/watchdogd 10 20
+service watchdogd /system/bin/watchdogd 10 20
     oneshot
     seclabel u:r:watchdogd:s0
