@@ -90,6 +90,16 @@ on boot
 	insmod /vendor/lib/modules/rfkill.ko
 	insmod /vendor/lib/modules/cfg80211.ko
 	insmod /vendor/lib/modules/8812au.ko
+	insmod /vendor/lib/modules/ecdh_generic.ko
+	insmod /vendor/lib/modules/bluetooth.ko
+	insmod /vendor/lib/modules/btrtl.ko
+	insmod /vendor/lib/modules/btintel.ko
+	insmod /vendor/lib/modules/btbcm.ko
+	insmod /vendor/lib/modules/hci_uart.ko
+	insmod /vendor/lib/modules/rfcomm.ko
+	insmod /vendor/lib/modules/bnep.ko
+	insmod /vendor/lib/modules/hidp.ko
+	insmod /vendor/lib/modules/btusb.ko
 
 on property:sys.boot_completed=1
     # reset stune
